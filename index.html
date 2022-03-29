@@ -75,8 +75,12 @@
             </div>
 
             <div class="col-md-5 text-center d-none d-md-block">
-               <img class="img-fluid" src="/assets/ebook-cover.png"
-                  alt="image of a gray book with ninja pro written on it and a drawing of a ninja on the bottom">
+
+               <!-- tooltip -->
+               <span class="tt" data-bs-placement="bottom" title="Net Ninja Book Cover">
+                  <img class="img-fluid" src="/assets/ebook-cover.png"
+                     alt="image of a gray book with ninja pro written on it and a drawing of a ninja on the bottom">
+               </span>
             </div>
          </div>
       </div>
@@ -379,6 +383,13 @@
                         <i class="bi bi-envelope-fill"></i>
                      </span>
                      <input type="email" id="email" class="form-control" placeholder="e.g. mario@example.com">
+
+                     <!-- tooltip -->
+                     <span class="input-group-text">
+                        <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to.">
+                           <i class="bi bi-question-circle text-muted"></i>
+                        </span>
+                     </span>
                   </div>
 
                   <label for="name" class="form-label">Name:</label>
@@ -387,6 +398,13 @@
                         <i class="bi bi-person-fill"></i>
                      </span>
                      <input type="text" id="name" class="form-control" placeholder="e.g. Mario">
+
+                     <!-- tooltip -->
+                     <span class="input-group-text">
+                        <span class="tt" data-bs-placement="bottom" title="Enter your name, we'll use for contact.">
+                           <i class="bi bi-question-circle text-muted"></i>
+                        </span>
+                     </span>
                   </div>
 
                   <label for="subject" class="form-label">What is your question about?</label>
@@ -420,6 +438,13 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"></script>
+
+   <script>
+      const tooltips = document.querySelectorAll('.tt')
+      tooltips.forEach(t => {
+         new bootstrap.Tooltip(t)
+      })
+   </script>
 </body>
 
 </html>
