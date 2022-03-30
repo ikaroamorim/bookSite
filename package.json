@@ -1,0 +1,25 @@
+{
+  "name": "booksite",
+  "version": "1.0.0",
+  "description": "Demo project about Bootstrap utilization",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikaroamorim/bookSite.git"
+  },
+  "keywords": [
+    "bootstrap"
+  ],
+  "author": "Ikaro Amorim e Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ikaroamorim/bookSite/issues"
+  },
+  "homepage": "https://github.com/ikaroamorim/bookSite#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
